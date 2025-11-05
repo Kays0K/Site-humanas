@@ -1,0 +1,265 @@
+body {
+            font-family: 'Georgia', serif; 
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f2;
+            color: #333;
+        }
+
+        .revista-container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px double #a84239; 
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            font-family: 'Times New Roman', serif;
+            font-size: 2.8em;
+            color: #5d2b1f;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .header p {
+            font-style: italic;
+            color: #777;
+            font-size: 1.1em;
+            margin-top: 5px;
+        }
+
+        .secao {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-left: 5px solid #a84239;
+            background-color: #fcfcfc;
+        }
+
+        .secao h2 {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.8em;
+            color: #a84239;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+        }
+
+        .secao h3 {
+            font-size: 1.3em;
+            color: #5d2b1f;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .secao ul {
+            list-style: square;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .img-full-width {
+            width: 100%;
+            height: auto;
+            max-width: 400px;
+            border: 1px solid #ddd;
+            padding: 5px;
+            background-color: #fff;
+        }
+        
+        .img-food {
+            float: right;
+            margin: 0 0 15px 15px;
+            width: 40%;
+            max-width: 250px;
+            border: 3px double #a84239;
+            padding: 3px;
+        }
+
+        .caption {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #5d2b1f;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .citacao {
+            margin: 30px 0;
+            padding: 15px 25px;
+            background-color: #fff4e0;
+            border-left: 4px solid #f99d1c;
+            font-style: italic;
+            color: #333;
+            font-size: 1.15em;
+        }
+
+        .citacao p {
+            margin: 0;
+        }
+
+        .tabela-conceitos {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        .tabela-conceitos th, .tabela-conceitos td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .tabela-conceitos th {
+            width: 25%;
+            background-color: #e0e0e0;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .dicas-finais h2 {
+            color: #a84239;
+            font-size: 1.5em;
+        }
+
+        .emoji-destaque {
+            font-size: 1.2em;
+            margin-right: 5px;
+            color: #f99d1c;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        @media (max-width: 768px) {
+            .revista-container {
+                width: 95%;
+                padding: 20px;
+                margin: 15px auto;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+            .secao {
+                padding: 15px;
+            }
+            .tabela-conceitos th, .tabela-conceitos td {
+                display: block;
+                width: 100%;
+            }
+            .tabela-conceitos th {
+                background-color: #5d2b1f;
+                color: #fff;
+            }
+            .img-food {
+                float: none;
+                width: 80%;
+                margin: 15px auto;
+                display: block;
+            }
+        }
+
+        .revista-rodape {
+            background-color: #5d2b1f; 
+            color: #f4f4f2;
+            padding: 30px 40px;
+            margin-top: 50px;
+            text-align: center;
+            border-top: 5px solid #a84239; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .rodape-coluna {
+            flex-basis: 30%;
+            min-width: 250px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .rodape-coluna h4 {
+            color: #f99d1c;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #f4f4f250;
+            padding-bottom: 5px;
+        }
+
+        .rodape-coluna ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .rodape-coluna a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.3s;
+        }
+
+        .rodape-coluna a:hover {
+            color: #f99d1c;
+        }
+
+        .rodape-info {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #f4f4f250;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .revista-rodape {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .rodape-coluna {
+                text-align: center;
+                flex-basis: 100%;
+                min-width: auto;
+            }
+        }
